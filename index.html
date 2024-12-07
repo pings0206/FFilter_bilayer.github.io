@@ -70,14 +70,14 @@
         <p class="figure-caption">Figure 1: Bilayer silicon transmissive metasurface with rhombus-arranged air holes.</p>
       </div>
 
-      <h2 class="title is-4">Edge Detection and Center Blur</h2>
       <p>
         To achieve edge detection of the input image, the metasurface's transfer function must strongly suppress the central spatial 
         frequencies in the Fourier-transformed input image while allowing high transmission of other spatial frequencies. In contrast, 
-        center blur operates by performing the opposite effect.
+        center blur operates by performing the opposite effect. Based on the previous edge detection metasurface, the metasurface is 
+        firstly split into bilayer to introduce air gap tuning.
       </p>
 
-      <!-- Figures 2-6 -->
+      <!-- Figure 2 -->
       <div class="figure">
         <img src="static/Figure2Left.png" alt="Figure 2 Left">
         <p class="figure-caption">Figure 2 Left: Incident angle sweeping spectrum for p-polarization input.</p>
@@ -86,26 +86,38 @@
         <img src="static/Figure2Right.png" alt="Figure 2 Right">
         <p class="figure-caption">Figure 2 Right: Cross-section spectrum of the sweeping result.</p>
       </div>
+
+      <p>
+        Through Azimuthal angle sweeping, the transfer function of the metasurface for edge detection is shown in Figure 3. To expand 
+        the functionality to center blur, the left gap sweeping is necessary, shown in Figure 4.
+      </p>
+
+      <!-- Figures 3 and 4 -->
       <div class="figure">
         <img src="static/Figure3a.png" alt="Figure 3a">
         <p class="figure-caption">Figure 3a: Metasurface transfer function for edge detection (p-polarization).</p>
       </div>
       <div class="figure">
-        <img src="static/Figure3b.png" alt="Figure 3b">
-        <p class="figure-caption">Figure 3b: Metasurface transfer function for s-polarization.</p>
-      </div>
-      <div class="figure">
         <img src="static/Figure4Left.png" alt="Figure 4 Left">
         <p class="figure-caption">Figure 4 Left: Angle spectrum with left height for p-polarization.</p>
       </div>
-      <div class="figure">
-        <img src="static/Figure4Right.png" alt="Figure 4 Right">
-        <p class="figure-caption">Figure 4 Right: Angle spectrum with left height for s-polarization.</p>
-      </div>
+
+      <p>
+        Based on the switch of transfer function via gap tuning, Figure 5 shows its edge detection and center blur & denoising 
+        functionalities for 1D unpolarized input fringes image with a 30-degree FOV.
+      </p>
+
+      <!-- Figure 5 -->
       <div class="figure">
         <img src="static/Figure5_1.png" alt="Figure 5-1">
         <p class="figure-caption">Figure 5.1: Initial image and output for edge detection.</p>
       </div>
+
+      <p>
+        The edge detection functionality can extend to 2D, as shown in Figure 6 with a 30-degree FOV.
+      </p>
+
+      <!-- Figure 6 -->
       <div class="figure">
         <img src="static/Figure6_1.png" alt="Figure 6-1">
         <p class="figure-caption">Figure 6.1: Initial noisy image and center blur output.</p>
