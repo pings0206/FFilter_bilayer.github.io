@@ -11,21 +11,22 @@
       line-height: 1.6;
     }
     .content-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
       margin-bottom: 30px;
     }
     .content-text {
-      flex: 1;
-      min-width: 300px;
+      margin-bottom: 20px;
     }
-    .content-figure {
-      flex: 1;
-      min-width: 300px;
+    .figure-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-evenly;
+    }
+    .figure {
+      flex: 1 1 calc(50% - 20px); /* Adjusts to 50% width with gap */
       text-align: center;
     }
-    .content-figure img {
+    .figure img {
       max-width: 100%;
       height: auto;
       border: 1px solid #ddd;
@@ -64,24 +65,22 @@
     </div>
   </section>
 
-  <!-- Introduction Section -->
+  <!-- Content Section -->
   <section class="section">
     <div class="container">
       <h2 class="title is-4">Introduction</h2>
-      <div class="content-section">
-        <div class="content-text">
-          <p>
-            Fourier signal filtering remains a continuously prominent topic across various disciplines, including signal processing, imaging, 
-            and computational signal analysis. Traditional methods typically rely on spatial filters to modify spatial frequency components, 
-            but such devices are generally fixed in design and limited to single functionalities. Leveraging the versatile reconfigurability 
-            of flat photonics, this paper introduces a bilayer metasurface structure capable of achieving multiple filtering functionalities 
-            at a single operating wavelength.
-          </p>
-        </div>
-        <div class="content-figure">
-          <img src="static/Figure1.png" alt="Figure 1">
-          <p class="figure-caption">Figure 1: Bilayer silicon transmissive metasurface with rhombus-arranged air holes.</p>
-        </div>
+      <div class="content-text">
+        <p>
+          Fourier signal filtering remains a continuously prominent topic across various disciplines, including signal processing, imaging, 
+          and computational signal analysis. Traditional methods typically rely on spatial filters to modify spatial frequency components, 
+          but such devices are generally fixed in design and limited to single functionalities. Leveraging the versatile reconfigurability 
+          of flat photonics, this paper introduces a bilayer metasurface structure capable of achieving multiple filtering functionalities 
+          at a single operating wavelength.
+        </p>
+      </div>
+      <div class="figure">
+        <img src="static/Figure1.png" alt="Figure 1">
+        <p class="figure-caption">Figure 1: Bilayer silicon transmissive metasurface with rhombus-arranged air holes.</p>
       </div>
     </div>
   </section>
@@ -90,60 +89,60 @@
   <section class="section">
     <div class="container">
       <h2 class="title is-4">Edge Detection and Center Blur</h2>
-      <div class="content-section">
-        <div class="content-text">
-          <p>
-            To achieve edge detection of the input image, the metasurface's transfer function must strongly suppress the central spatial 
-            frequencies in the Fourier-transformed input image while allowing high transmission of other spatial frequencies. 
-            Figure 2 illustrates the incident angle sweeping spectrum and cross-section spectrum.
-          </p>
-        </div>
-        <div class="content-figure">
+      <div class="content-text">
+        <p>
+          To achieve edge detection of the input image, the metasurface's transfer function must strongly suppress the central spatial 
+          frequencies in the Fourier-transformed input image while allowing high transmission of other spatial frequencies. Figure 2 
+          illustrates the incident angle sweeping spectrum and cross-section spectrum.
+        </p>
+      </div>
+      <div class="figure-row">
+        <div class="figure">
           <img src="static/Figure2Left.png" alt="Figure 2 Left">
           <p class="figure-caption">Figure 2 Left: Incident angle sweeping spectrum for p-polarization input.</p>
+        </div>
+        <div class="figure">
           <img src="static/Figure2Right.png" alt="Figure 2 Right">
           <p class="figure-caption">Figure 2 Right: Cross-section spectrum of the sweeping result.</p>
         </div>
       </div>
 
-      <div class="content-section">
-        <div class="content-text">
-          <p>
-            Through Azimuthal angle sweeping, Figure 3 shows the transfer function of the metasurface for edge detection. To expand the 
-            functionality to center blur, the left gap sweeping is necessary, shown in Figure 4.
-          </p>
-        </div>
-        <div class="content-figure">
+      <div class="content-text">
+        <p>
+          Through Azimuthal angle sweeping, Figure 3 shows the transfer function of the metasurface for edge detection. To expand the 
+          functionality to center blur, the left gap sweeping is necessary, shown in Figure 4.
+        </p>
+      </div>
+      <div class="figure-row">
+        <div class="figure">
           <img src="static/Figure3a.png" alt="Figure 3">
           <p class="figure-caption">Figure 3: Metasurface transfer function for edge detection.</p>
+        </div>
+        <div class="figure">
           <img src="static/Figure4Left.png" alt="Figure 4">
           <p class="figure-caption">Figure 4: Transfer function for center blur via gap sweeping.</p>
         </div>
       </div>
 
-      <div class="content-section">
-        <div class="content-text">
-          <p>
-            Based on the switch of transfer function via gap tuning, Figure 5 shows its edge detection and center blur & denoising 
-            for 1D unpolarized input fringes image with a 30-degree FOV.
-          </p>
-        </div>
-        <div class="content-figure">
-          <img src="static/Figure5_1.png" alt="Figure 5">
-          <p class="figure-caption">Figure 5: Edge detection and center blur & denoising functionalities.</p>
-        </div>
+      <div class="content-text">
+        <p>
+          Based on the switch of transfer function via gap tuning, Figure 5 shows its edge detection and center blur & denoising 
+          for 1D unpolarized input fringes image with a 30-degree FOV.
+        </p>
+      </div>
+      <div class="figure">
+        <img src="static/Figure5_1.png" alt="Figure 5">
+        <p class="figure-caption">Figure 5: Edge detection and center blur & denoising functionalities.</p>
       </div>
 
-      <div class="content-section">
-        <div class="content-text">
-          <p>
-            The edge detection functionality extends to 2D, as shown in Figure 6 with a 30-degree FOV.
-          </p>
-        </div>
-        <div class="content-figure">
-          <img src="static/Figure6_1.png" alt="Figure 6">
-          <p class="figure-caption">Figure 6: 2D edge detection functionality.</p>
-        </div>
+      <div class="content-text">
+        <p>
+          The edge detection functionality extends to 2D, as shown in Figure 6 with a 30-degree FOV.
+        </p>
+      </div>
+      <div class="figure">
+        <img src="static/Figure6_1.png" alt="Figure 6">
+        <p class="figure-caption">Figure 6: 2D edge detection functionality.</p>
       </div>
     </div>
   </section>
