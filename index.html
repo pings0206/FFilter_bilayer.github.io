@@ -10,21 +10,10 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
     }
-    .figure img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-    .divider {
-      border-top: 1px solid #ccc;
-      margin: 30px 0;
-    }
-    .citation-box {
+    .pdf-container {
+      width: 100%;
+      height: 90vh;
       border: 1px solid #ccc;
-      padding: 15px;
-      background-color: #f9f9f9;
-      font-size: 0.9rem;
       margin-top: 20px;
     }
   </style>
@@ -50,37 +39,15 @@
     <div class="container">
       <h2 class="title is-4">Abstract</h2>
       <p>
-Fourier frequency modulation is a prominent topic with critical applications in imaging, signal processing, and computation. Notably, significant advancements have been made in efficient Fourier frequency filtering for imaging, including edge detection. However, achieving tunability—where the filter can switch between different filtering targets—remains uncommon. Flat photonics, with its vast potential in reconfigurable photonics and optical modulation, has emerged as a promising solution to this challenge. This paper introduces a bilayer silicon 2D grating immersed with in UCF-liquid crystal first whose transform function can switch between the requirement of center blur and edge detection via electric-stimuli and gap tunning. To increase the polarization-insensitivity and isotropy, this paper also introduces a bilayer silicon metasurface featuring rhombus-arranged air holes, enabling a switch between 3D edge detection within a 0.1–0.5 NA and 360° azimuthal range, characterized by high polarization insensitivity and isotropy, and 1D center blurring and denoising through air-gap tuning.
+        Fourier frequency modulation is a prominent topic with critical applications in imaging, signal processing, and computation. Notably, significant advancements have been made in efficient Fourier frequency filtering for imaging, including edge detection. However, achieving tunability—where the filter can switch between different filtering targets—remains uncommon. Flat photonics, with its vast potential in reconfigurable photonics and optical modulation, has emerged as a promising solution to this challenge. This paper introduces a bilayer silicon 2D grating immersed with in UCF-liquid crystal first whose transform function can switch between the requirement of center blur and edge detection via electric-stimuli and gap tunning. To increase the polarization-insensitivity and isotropy, this paper also introduces a bilayer silicon metasurface featuring rhombus-arranged air holes, enabling a switch between 3D edge detection within a 0.1–0.5 NA and 360° azimuthal range, characterized by high polarization insensitivity and isotropy, and 1D center blurring and denoising through air-gap tuning.
       </p>
-      <!-- Add the figure immediately after the abstract -->
-      <div class="figure">
-        <img src="static/Screenshot 2024-12-07 030023.png" style="width: 60%; display: block; margin: 0 auto;">
-      </div>
     </div>
   </section>
 
-  <!-- Images Section -->
+  <!-- PDF Display Section -->
   <section class="section">
     <div class="container">
-      <div class="figure">
-        <img src="static/Reconfigurable Fourier Filtering Imaging Bilayer Metasurface2-images-0.jpg" alt="Image 1">
-      </div>
-      <div class="divider"></div>
-      <div class="figure">
-        <img src="static/Reconfigurable Fourier Filtering Imaging Bilayer Metasurface2-images-1.jpg" alt="Image 2">
-      </div>
-      <div class="divider"></div>
-      <div class="figure">
-        <img src="static/Reconfigurable Fourier Filtering Imaging Bilayer Metasurface2-images-2.jpg" alt="Image 3">
-      </div>
-      <div class="citation-box">
-        <strong>Citations:</strong>
-        <ol>
-          <li>Cotrufo, M., Singh, S., Arora, A., Majewski, A., & Alù, A. (2023). Polarization imaging and edge detection with image-processing metasurfaces. <em>Optica</em>, 10(10), 1331–1338.</li>
-          <li>Cotrufo, M., Arora, A., Singh, S., & Alù, A. (2023). Dispersion engineered metasurfaces for broadband, high-NA, high-efficiency, dual-polarization analog image processing. <em>Nature Communications</em>, 14, 6290.</li>
-          <li>Komar, A., Aoni, R. A., Xu, L., Rahmani, M., Miroshnichenko, A. E., & Neshev, D. N. (2021). Edge Detection with Mie-Resonant Dielectric Metasurfaces. <em>ACS Photonics</em>, 8(3), 864–871.</li>
-        </ol>
-      </div>
+      <iframe src="static/Reconfigurable Fourier Filtering Imaging Bilayer Metasurface33.pdf" class="pdf-container"></iframe>
     </div>
   </section>
 </body>
