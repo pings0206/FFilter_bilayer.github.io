@@ -10,14 +10,17 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
     }
-    .pdf-page {
-      margin: 20px 0;
+    .figure {
       text-align: center;
+      margin: 20px 0;
     }
-    .pdf-page img {
+    .figure img {
       max-width: 100%;
       height: auto;
-      border: 1px solid #ddd;
+    }
+    .figure-caption {
+      font-style: italic;
+      margin-top: 5px;
     }
   </style>
 </head>
@@ -46,29 +49,62 @@
         between 0.1-0.5 NA 360° Azimuthal 3D edge detection with high polarization-insensitivity and isotropy and 
         1D center blur & denoising by air gap tuning.
       </p>
-      <p>
-        Fourier signal filtering remains a continuously prominent topic across various disciplines, including signal processing, imaging, 
-        and computational signal analysis. Leveraging the versatile reconfigurability of flat photonics, this paper introduces a bilayer 
-        metasurface structure capable of achieving multiple filtering functionalities at a single operating wavelength. Specifically, 
-        through tuning the air gap between two layers, the device can achieve switching from 360° Azimuthal 3D edge detection with 
-        high polarization-insensitivity and isotropy to 1D center blur & denoising for noisy image input.
-      </p>
     </div>
   </section>
 
-  <!-- PDF Pages as Images -->
+  <!-- Content Section -->
   <section class="section">
     <div class="container">
-      <h2 class="title is-4">View PDF Pages</h2>
-      <!-- Correct image paths -->
-      <div class="pdf-page">
-        <img src="static/Reconfigurable Fourier Filtering Imaging Bilayer Metasurface-images-0.jpg" alt="Page 1">
+      <h2 class="title is-4">Introduction</h2>
+      <p>
+        Fourier signal filtering remains a continuously prominent topic across various disciplines, including signal processing, imaging, 
+        and computational signal analysis. Traditional methods typically rely on spatial filters to modify spatial frequency components, 
+        but such devices are generally fixed in design and limited to single functionalities. Leveraging the versatile reconfigurability 
+        of flat photonics, this paper introduces a bilayer metasurface structure capable of achieving multiple filtering functionalities 
+        at a single operating wavelength, shown in Figure 1.
+      </p>
+      <p>
+        Specifically, through tuning the air gap between two layers, the device can achieve switching from 360° Azimuthal 3D edge detection 
+        with high polarization-insensitivity and isotropy to 1D center blur & denoising effect for noisy image input. This work is among the 
+        first to achieve such a functional switch using flat photonics, laying the foundation in computational metasurfaces to perform 
+        multi-order derivative operations for imaging applications.
+      </p>
+
+      <!-- Figure 1 -->
+      <div class="figure">
+        <img src="static/images/figure1.png" alt="Figure 1">
+        <p class="figure-caption">Figure 1: Bilayer silicon transmissive metasurface with rhombus-arranged air holes, presented in three perspectives: 3D view, top view, and side view. The angle between each air hole is 60 degrees. Through tuning the left air gap height, it can achieve different filtering functionalities.</p>
       </div>
-      <div class="pdf-page">
-        <img src="static/Reconfigurable Fourier Filtering Imaging Bilayer Metasurface-images-1.jpg" alt="Page 2">
+
+      <h2 class="title is-4">Edge Detection and Center Blur</h2>
+      <p>
+        To achieve edge detection of the input image, the metasurface's transfer function must strongly suppress the central spatial 
+        frequencies in the Fourier-transformed input image while allowing high transmission of other spatial frequencies. In contrast, 
+        center blur operates by performing the opposite effect. Thus, it is essential to design a transmissive, reconfigurable metasurface 
+        whose transfer function can be adjusted through specific tuning techniques to meet the requirements for both edge detection 
+        and center blur.
+      </p>
+
+      <!-- Figures 2-6 -->
+      <div class="figure">
+        <img src="static/images/figure2.png" alt="Figure 2">
+        <p class="figure-caption">Figure 2: Incident angle sweeping spectrum.</p>
       </div>
-      <div class="pdf-page">
-        <img src="static/Reconfigurable Fourier Filtering Imaging Bilayer Metasurface-images-2.jpg" alt="Page 3">
+      <div class="figure">
+        <img src="static/images/figure3.png" alt="Figure 3">
+        <p class="figure-caption">Figure 3: Metasurface transfer function for edge detection.</p>
+      </div>
+      <div class="figure">
+        <img src="static/images/figure4.png" alt="Figure 4">
+        <p class="figure-caption">Figure 4: Angle spectrum with left height.</p>
+      </div>
+      <div class="figure">
+        <img src="static/images/figure5.png" alt="Figure 5">
+        <p class="figure-caption">Figure 5: 1D functionality plots for edge detection and center blur.</p>
+      </div>
+      <div class="figure">
+        <img src="static/images/figure6.png" alt="Figure 6">
+        <p class="figure-caption">Figure 6: 2D functionality plots for edge detection.</p>
       </div>
     </div>
   </section>
