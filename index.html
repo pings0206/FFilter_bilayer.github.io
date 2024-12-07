@@ -72,11 +72,22 @@ The Fourier Filtering Metasurface works for modifying the Fourier of Input Image
   <p style="text-align: center; margin-top: 10px; font-style: italic;">Figure 1: Fourier Transfer of Input Polygon with Its Phase</p>
 </div>
       
+      <p>
+With an appropriate numerical aperture (NA), the Fourier transform of the input image is modulated interpolating the designed metasurface transfer function. After applying the inverse Fourier transform, the final filtered image is obtained with high precision. For edge detection, the central spatial frequency must be suppressed to an intensity level below 0.1; otherwise, certain central spatial frequencies may pass through the filter. Additionally, non-central spatial frequencies must be efficiently transmitted to maintain the device's overall efficiency. In contrast, center blur achieves the opposite effect by enhancing central spatial frequencies while suppressing others strongly. One critical question remains: how to clearly define the boundary between central and non-central spatial frequencies. Through extensive research and considering the device's limited working NA, this boundary needs to be as narrow as possible, meaning edge detection’s intensity needs to return and maintain as high-passing after a very narrow FOV. Center blur’s intensity needs to drop and maintain as zero-passing after a very narrow FOV. It is challenging to achieve the switch between these two within the same flat photonics device and working at same wavelength due to the strict requirements and limited of reconfigurable techniques. 
+      </p>
 
 
 
 
 
+
+
+
+
+
+
+
+        
 
 
 <!-- Spacer -->
